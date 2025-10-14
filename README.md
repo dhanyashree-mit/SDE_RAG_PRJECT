@@ -7,7 +7,8 @@ This repository contains a self-contained RAG service that can crawl, index, and
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/dhanyashree-mit/SDE_RAG_PRJECT
-    cd <your-repo-folder>
+    cd SDE_RAG_PRJECT
+    
     ```
 
 2.  **Install dependencies and run:**
