@@ -18,11 +18,88 @@ This repository contains a self-contained RAG service that can crawl, index, and
     ```
 The application will be available at `http://127.0.0.1:7860`. The required LLM model will be downloaded automatically on first run.
 
-## Evaluate
+## Evaluation Samples
 
-1.  **Crawl:** Open the UI, enter a URL (e.g., `http://books.toscrape.com`), and click "Start Crawl".
-2.  **Index:** Go to the "Index" tab and click "Index Crawled Content".
-3.  **Ask:** Go to the "Ask" tab and ask a question based on the site's content (e.g., "what are the category of books?").
+[cite_start]Here are the required example requests and responses for the `crawl`, `index`, and `ask` functions.
+
+### 1. Crawl Example
+
+* **Action (Request):** In the "Crawl" tab, I entered the Start URL `http://books.toscrape.com` and clicked the "Start Crawl" button.
+* **Response:**
+    ```json
+    {
+      "page_count": 61,
+      "skipped_count": 0,
+      "urls": [
+        "[http://books.toscrape.com/](http://books.toscrape.com/)",
+        "[http://books.toscrape.com/catalogue/category/books/travel_2/index.html](http://books.toscrape.com/catalogue/category/books/travel_2/index.html)",
+        "..."
+      ]
+    }
+    ```
+
+### 2. Index Example
+
+* **Action (Request):** After the crawl was complete, I went to the "Index" tab and clicked the "Index Crawled Content" button.
+* **Response:**
+    ```json
+    {
+      "vector_count": 62
+    }
+    ```
+
+### 3. Ask Example (Successful Answer)
+
+[cite_start]This example demonstrates a successful answer with a cited URL and snippet.
+
+* **Action (Request):** In the "Ask" tab, I asked the question: `"what are the category of books?"`
+* **Response:**
+    ```json
+    {
+      "answer": "The categories of books mentioned in the context include Fiction, Travel Mystery, Historical Fiction, Sequential Art, Classics, Philosophy, Romance, Womens Fiction, Fiction Childrens, Religion, Nonfiction, Music, Science Fiction, Sports and Games, Add a comment, Fantasy New Adult Young Adult Science Poetry Paranormal Art Psychology Autobiography Parenting Adult Fiction Humor Horror History Food and Drink Christian Fiction Business Biography Thriller Contemporary Spirituality Academic Self Help Historical Christian Suspense Short",
+      "sources": [
+        {
+  "sources": [
+    {
+      "url": "http://books.toscrape.com/catalogue/soumission_998/index.html",
+      "snippet": "Soumission | Books to Scrape - Sandbox Home Books Fiction Soumission Soumission £50.10 In stock (20 available) Warning! This is a demo website for web scraping purposes. Prices and ratings here were r"
+    },
+    {
+      "url": "http://books.toscrape.com/catalogue/category/books/default_15/index.html",
+      "snippet": "Default | Books to Scrape - Sandbox Home Books Default Books Travel Mystery Historical Fiction Sequential Art Classics Philosophy Romance Womens Fiction Fiction Childrens Religion Nonfiction Music Def"
+    },
+    {
+      "url": "http://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html",
+      "snippet": "The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull | Books to Scrape - Sandbox Home Books Default The Coming Woman: A Novel Based on the Life of the Infamous Femin"
+    }
+  ],
+  "timings": {
+    "retrieval_s": 0.09,
+    "generation_s": 374.629,
+    "total_s": 374.719
+  }
+}
+      ]
+    }
+    ```
+
+### 4. Ask Example (Refusal)
+
+[cite_start]This example demonstrates a refusal when the information is not in the crawled content. [cite_start]The response correctly includes the closest retrieved snippets as evidence[cite: 28].
+
+* **Action (Request):** In the "Ask" tab, I asked a question that cannot be answered from the site's content: `"What is the publisher of the book 'It's Only the Himalayas'?"`
+* **Response:**
+    ```json
+    {
+      "answer": "Not found in crawled content.",
+      "sources": [
+        {
+          "url": "[http://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html](http://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html)",
+          "snippet": "It's Only the Himalayas by S. Bedford ★★★★★ ... Product Information UPC a22124811b2d2b77 Product Type Books"
+        }
+      ]
+    }
+    ```
 
 ## Architecture, Design, and Tradeoffs
 
