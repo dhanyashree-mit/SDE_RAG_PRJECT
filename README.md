@@ -167,8 +167,7 @@ The application will be available at `http://127.0.0.1:7860`. The required LLM m
 "http://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html"
 ]
 }
-
-    ```
+ ```
 
 ### 2. Index Example
 
