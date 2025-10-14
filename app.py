@@ -250,6 +250,7 @@ with gr.Blocks() as demo:
 
         ask_btn.click(handle_question, inputs=[question_input], outputs=[answer_output, sources_output])
 
-demo.launch()
+
 if __name__ == "__main__":
     demo.launch()
+
