@@ -28,14 +28,146 @@ The application will be available at `http://127.0.0.1:7860`. The required LLM m
 * **Response:**
     ```json
     {
-      "page_count": 61,
-      "skipped_count": 0,
-      "urls": [
-        "[http://books.toscrape.com/](http://books.toscrape.com/)",
-        "[http://books.toscrape.com/catalogue/category/books/travel_2/index.html](http://books.toscrape.com/catalogue/category/books/travel_2/index.html)",
-        "..."
-      ]
-    }
+"page_count"
+:
+61
+,
+"skipped_count"
+:
+0
+,
+"skipped_robots"
+:
+[
+]
+,
+"urls"
+:
+[
+"http://books.toscrape.com/"
+,
+"http://books.toscrape.com/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books_1/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/travel_2/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/mystery_3/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/classics_6/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/philosophy_7/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/romance_8/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/fiction_10/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/childrens_11/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/religion_12/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/music_14/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/default_15/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/fantasy_19/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/new-adult_20/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/young-adult_21/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/science_22/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/poetry_23/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/paranormal_24/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/art_25/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/psychology_26/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/autobiography_27/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/parenting_28/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/adult-fiction_29/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/humor_30/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/horror_31/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/history_32/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/food-and-drink_33/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/christian-fiction_34/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/business_35/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/biography_36/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/thriller_37/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/contemporary_38/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/spirituality_39/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/academic_40/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/self-help_41/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/historical_42/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/christian_43/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/suspense_44/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/short-stories_45/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/novels_46/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/health_47/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/politics_48/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/cultural_49/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/erotica_50/index.html"
+,
+"http://books.toscrape.com/catalogue/category/books/crime_51/index.html"
+,
+"http://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"
+,
+"http://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html"
+,
+"http://books.toscrape.com/catalogue/soumission_998/index.html"
+,
+"http://books.toscrape.com/catalogue/sharp-objects_997/index.html"
+,
+"http://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html"
+,
+"http://books.toscrape.com/catalogue/the-requiem-red_995/index.html"
+,
+"http://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html"
+,
+"http://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html"
+]
+}
+
     ```
 
 ### 2. Index Example
@@ -79,15 +211,15 @@ The application will be available at `http://127.0.0.1:7860`. The required LLM m
     "total_s": 374.719
   }
 }
-      ]
-    }
+      
+    
     ```
 
 ### 4. Ask Example (Refusal)
 
 [cite_start]This example demonstrates a refusal when the information is not in the crawled content. [cite_start]The response correctly includes the closest retrieved snippets as evidence[cite: 28].
 
-* **Action (Request):** In the "Ask" tab, I asked a question that cannot be answered from the site's content: `"What is the publisher of the book 'It's Only the Himalayas'?"`
+* **Action (Request):** In the "Ask" tab, I asked a question that cannot be answered from the site's content: `"What is amazon ?"`
 * **Response:**
     ```json
     {
