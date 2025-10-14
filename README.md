@@ -20,32 +20,18 @@ The application will be available at `http://127.0.0.1:7860`. The required LLM m
 
 ## Evaluation Samples
 
-[cite_start]Here are the required example requests and responses for the `crawl`, `index`, and `ask` functions.
+[]Here are the required example requests and responses for the `crawl`, `index`, and `ask` functions.
 
 ### 1. Crawl Example
 
 * **Action (Request):** In the "Crawl" tab, I entered the Start URL `http://books.toscrape.com` and clicked the "Start Crawl" button.
 * **Response:**
     ```json
-    {
-"page_count"
-:
-61
-,
-"skipped_count"
-:
-0
-,
-"skipped_robots"
-:
-[
-]
-,
-"urls"
-:
-[
-"http://books.toscrape.com/"
-,
+    {"page_count":61,
+"skipped_count":0,
+"skipped_robots":[],
+"urls":[
+"http://books.toscrape.com/",
 "http://books.toscrape.com/index.html"
 ,
 "http://books.toscrape.com/catalogue/category/books_1/index.html"
@@ -211,9 +197,7 @@ The application will be available at `http://127.0.0.1:7860`. The required LLM m
     "total_s": 374.719
   }
 }
-      
-    
-    ```
+  ```
 
 ### 4. Ask Example (Refusal)
 
