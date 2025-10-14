@@ -42,7 +42,7 @@ The application will be available at `http://127.0.0.1:7860`. The required LLM m
     "http://books.toscrape.com/catalogue/category/books/romance_8/index.html",
     "http://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
     "http://books.toscrape.com/catalogue/category/books/fiction_10/index.html",
-    "http://books.toscrape.com/catalogue/category/books/childrens_11/index.html,
+    "http://books.toscrape.com/catalogue/category/books/childrens_11/index.html",
     "http://books.toscrape.com/catalogue/category/books/religion_12/index.html",
     "http://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html",
     "http://books.toscrape.com/catalogue/category/books/music_14/index.html",
@@ -91,7 +91,7 @@ The application will be available at `http://127.0.0.1:7860`. The required LLM m
     "http://books.toscrape.com/catalogue/the-requiem-red_995/index.html",
     "http://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html",
     "http://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html"]
-}
+   }
      ```
 
 ### 2. Index Example
