@@ -30,8 +30,7 @@ The application will be available at `http://127.0.0.1:7860`. The required LLM m
     {"page_count":61,
 "skipped_count":0,
 "skipped_robots":[],
-"urls":[
-"http://books.toscrape.com/",
+"urls":["http://books.toscrape.com/",
 "http://books.toscrape.com/index.html"
 ,
 "http://books.toscrape.com/catalogue/category/books_1/index.html"
@@ -154,7 +153,7 @@ The application will be available at `http://127.0.0.1:7860`. The required LLM m
 ]
 }
 
- ```
+    ```
 
 ### 2. Index Example
 
@@ -164,7 +163,10 @@ The application will be available at `http://127.0.0.1:7860`. The required LLM m
     {
       "vector_count": 62
     }
-    ```
+
+
+```
+
 
 ### 3. Ask Example (Successful Answer)
 
