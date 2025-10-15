@@ -115,9 +115,9 @@ The application will be available at `http://127.0.0.1:7860`. The required LLM m
 * **Response:**
     ```json
     {
-      "answer": {"The categories of books mentioned in the context include Fiction, Travel Mystery, Historical Fiction, Sequential Art, Classics, Philosophy, Romance, Womens Fiction, Fiction ,                                    Childrens,Religion,Nonfiction, Music, Science Fiction, Sports and Games,Add a comment, Fantasy New Adult Young Adult Science Poetry Paranormal Art Psychology Autobiography Parenting Adult      Fiction
-                Humor Horror History Food and Drink Christian Fiction Business Biography Thriller Contemporary Spirituality Academic Self Help Historical Christian Suspense Short"
-      }
+      "answer": "The categories of books mentioned in the context include Fiction, Travel Mystery, Historical Fiction, Sequential Art, Classics, Philosophy, Romance, Womens Fiction, Fiction ,                                    Childrens,Religion,Nonfiction, Music, Science Fiction, Sports and Games,Add a comment, Fantasy New Adult Young Adult Science Poetry Paranormal Art Psychology Autobiography Parenting Adult   Fiction
+                Humor Horror History Food and Drink Christian Fiction Business Biography Thriller Contemporary Spirituality Academic Self Help Historical Christian Suspense Short",
+      
   "sources": [
     {
       "url": "http://books.toscrape.com/catalogue/soumission_998/index.html",
